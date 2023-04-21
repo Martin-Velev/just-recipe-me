@@ -1,0 +1,24 @@
+.nav {
+	display: flex;
+
+	justify-content: space-between;
+}
+
+.navLinks {
+	width: 80%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.btn {
+	background-color: #0d3b66;
+	color: white;
+}
+
+.btn a:link {
+	text-decoration: none;
+}
+
+.btn a:visited {
+	text-decoration: none;
+}
