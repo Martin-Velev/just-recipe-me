@@ -1,11 +1,11 @@
 import TestBtn from './components/TestBtn'
+import Link from 'next/link'
 
 export default function Home() {
+	// Router.push('./recipes')
 	return (
 		<>
-			<h1>Just Recipe Me</h1>
-
-			<TestBtn />
+			{/* <Link href="./recipe">Recipes</Link> */}
 		</>
 	)
 }

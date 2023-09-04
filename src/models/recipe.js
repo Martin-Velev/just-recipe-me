@@ -26,24 +26,4 @@ const recipeSchema = new mongoose.Schema({
 	},
 })
 
-// const sanitizer = (doc) => {
-// 	const { name, time, ingredients, instructions, createdAt } = doc
-// 	const id = doc._id
-
-// 	return {
-// 		id,
-// 		name,
-// 		time,
-// 		ingredients,
-// 		instructions,
-// 		createdAt,
-// 	}
-// }
-
-// recipeSchema.pre('findOne', (doc, next) => {
-// 	doc = sanitizer(doc)
-// 	console.log('sanitized', doc)
-// 	next()
-// })
-
 export default mongoose.model('Recipe', recipeSchema)

@@ -1,26 +1,28 @@
 export default function Recipe({ recipe }) {
 	return (
 		<>
-			<h1>{recipe.name}</h1>
-			{recipe.img && <img src={recipe.img} />}
+			<h1 className="text-6xl text-center">{recipe.name}</h1>
+			<img className="mx-auto" src={recipe.img || '/plate-holder.jpg'} />
 			<hr />
-			<section>
-				<h2>Ingredients:</h2>
-				<ul>
-					{recipe.ingredients.map((ingr) => (
-						<li key={ingr}>{ingr}</li>
-					))}
-				</ul>
-			</section>
+			<div className="mx-auto w-3/4 ">
+				<section className="my-2">
+					<h2 className="text-2xl">Ingredients:</h2>
+					<ul className="list-disc">
+						{recipe.ingredients.map((ingr) => (
+							<li key={ingr}>{ingr}</li>
+						))}
+					</ul>
+				</section>
 
-			<section>
-				<h2>Instructions:</h2>
-				<ol>
-					{recipe.instructions.map((instr) => (
-						<li key={instr}>{instr}</li>
-					))}
-				</ol>
-			</section>
+				<section className="my-2">
+					<h2 className="text-2xl">Instructions:</h2>
+					<ol className="list-decimal">
+						{recipe.instructions.map((instr) => (
+							<li key={instr}>{instr}</li>
+						))}
+					</ol>
+				</section>
+			</div>
 		</>
 	)
 }

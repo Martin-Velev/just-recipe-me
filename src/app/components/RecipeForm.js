@@ -34,7 +34,6 @@ export default function RecipeForm() {
 			body: JSON.stringify(recipe),
 		})
 
-		console.log('resp', resp)
 	}
 
 	return (

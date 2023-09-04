@@ -3,7 +3,6 @@ import Recipe from '../../../../models/recipe'
 
 export async function GET(req, params) {
 
-	console.log('param', params)
 	const id = params.params.id
 	if (!id) {
 		return new Response(null, {

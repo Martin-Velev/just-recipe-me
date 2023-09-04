@@ -4,7 +4,6 @@ import { API_ROOT } from '@/constants/constants'
 
 export default function TestBtn() {
 	async function testFn() {
-		console.log('test')
 
 		const resp =  await fetch(`${API_ROOT}/recipe`, {
 			method: 'GET'
